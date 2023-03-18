@@ -20,6 +20,9 @@ async def send_welcome(message: types.Message):
 
 @dp.message_handler()
 async def echo(message: types.Message):
+    """
+    This handler receives the text entered by the user and sends it as a reverse message
+    """
     await message.answer(message.text)
 
 
